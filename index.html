@@ -16,7 +16,7 @@
     <div class="container">
 
         <div class="display">
-            <input type="text" id="screen" placeholder="Enter Value">
+            <input type="text" id="screen" placeholder="0">
         </div>
 
         <div class="btns">
@@ -35,25 +35,25 @@
                     <button class="trigo"> Trigonometry <i class="fa-solid fa-angle-down"></i></button>
                     <div class="dropdown-content">
                         <div class="drop-row-one">
-                            <button onclick="sin()">Sine</button>
-                            <button>Cos</button>
-                            <button>tan</button>
+                            <button onclick="sin()">Sin</button>
+                            <button onclick="cos()">Cos</button>
+                            <button onclick="tan()">tan</button>
                         </div>
                         <div class="drop-row-two">
-                            <button>Cosine</button>
-                            <button>Sec</button>
-                            <button>Cot</button>
+                            <button onclick="sinh()">Sinh</button>
+                            <button onclick="cosh()">Cosh</button>
+                            <button onclick="tanh()">tanh</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="dropdown">
-                    <button class="trigo">&Fouriertrf; Function <i class="fa-solid fa-angle-down"></i></button>
+                    <button class="trigo">&fpartint; &nbsp; Function <i class="fa-solid fa-angle-down"></i></button>
                     <div class="dropdown-content">
                         <div class="drop-row-one">
-                            <button class="btn">x<sup>2</sup></button>
-                            <button class="btn">1/x</button>
-                            <button class="btn">|x|</button>
+                            <button onclick="square()">x<sup>2</sup></button>
+                            <button onclick="dvd()">1/x</button>
+                            <button onclick="abs()">|x|</button>
                         </div>
                         <div class="drop-row-two">
                             <button class="btn">exp</button>
@@ -66,19 +66,19 @@
             </div>
             <div class="row">
                 <button class="btn">2<sup>nd</sup></button>
-                <button class="btn">PI</button>
-                <button class="btn">e</button>
-                <button onclick="clr()">C</button>
+                <button onclick="pi()">&pi;</button>
+                <button onclick="e()">e</button>
+                <button onclick="clr()">Ac</button>
                 <button onclick="dlt()">DE</button>
                 <!-- <button class="btn"><i class="fa-light fa-delete-left"></i></button> -->
 
             </div>
 
             <div class="row">
-                <button class="btn">&#8730;</button>
+                <button onclick="sqrt()">&#8730;</button>
                 <button class="btn">(</button>
                 <button class="btn">)</button>
-                <button class="btn">n!</button>
+                <button onclick="fact()">n!</button>
                 <button class="btn">/</button>
                 <!-- <button class="btn">&divide;</button> -->
             </div>
@@ -92,7 +92,7 @@
             </div>
 
             <div class="row">
-                <button class="btn">10<sup>x</sup></button>
+                <button onclick="tenPower()">10<sup>x</sup></button>
                 <button class="btn">4</button>
                 <button class="btn">5</button>
                 <button class="btn">6</button>
@@ -100,7 +100,7 @@
             </div>
 
             <div class="row">
-                <button class="btn">log</button>
+                <button onclick="log()">log</button>
                 <button class="btn">1</button>
                 <button class="btn">2</button>
                 <button class="btn">3</button>
@@ -108,8 +108,8 @@
             </div>
 
             <div class="row">
-                <button class="btn">ln</button>
-                <button class="btn">+/-</button>
+                <button onclick="ln()">ln</button>
+                <button onclick="uniminus()">+/-</button>
                 <button class="btn">0</button>
                 <button class="btn">.</button>
                 <button onclick="equal()">=</button>
