@@ -16,10 +16,15 @@ for (item of btns) {
         }
     });
 }
+
+// Memory Functions 
 function memoryStore() {
     memory = screen.value;
     clr();
     console.log(memory);
+}
+function memoryRead() {
+    screen.value+= memory
 }
 
 function memoryClear() {
@@ -35,9 +40,7 @@ function memoryDecre() {
     memory = Number(memory) - 1;
 }
 
-function memoryRead() {
-    screen.value+= memory
-}
+// Memory Functions End
 
 function equal() {
     screen.value = eval(screen.value)
@@ -51,6 +54,7 @@ function dlt() {
     screen.value = screen.value.substr(0, screen.value.length - 1)
 
 }
+// Trigonometry Functions
 function sin() {
     screen.value = Math.sin(screen.value)
 }
@@ -73,6 +77,31 @@ function cosh() {
 function tanh() {
     screen.value = Math.tanh(screen.value)
 }
+// Trigonometry Functions End
+
+// Functions Start
+function square(){
+    screen.value=screen.value*screen.value;
+}
+function dvd(){
+    screen.value=1/screen.value;
+}
+function abs(){
+    screen.value=Math.abs(screen.value)
+}
+function exp(){
+    btntxt="e"
+    screen.value+=btntxt;
+}
+function mod(){
+    btntxt="%";
+    screen.value += btntxt;
+}
+function rand(){
+    screen.value=Math.random()*100;
+}
+// Functions End
+
 function fact(){
     let n=screen.value;
     var f=1;
@@ -88,9 +117,7 @@ function pi(){
     screen.value+=3.14;
 }
 
-function square(){
-    screen.value=screen.value*screen.value;
-}
+
 function xPowy(){
     btntxt="**"
     screen.value+=btntxt;
@@ -110,22 +137,4 @@ function e(){
 }
 function uniminus(){
     screen.value=-screen.value;
-}
-function abs(){
-    screen.value=Math.abs(screen.value)
-}
-function dvd(){
-    screen.value=1/screen.value;
-}
-function rand(){
-    screen.value=Math.random()*100;
-}
-function exp(){
-    btntxt="e"
-    screen.value+=btntxt;
-}
-function mod(){
-    btntxt="%";
-    screen.value += btntxt;
-
 }
