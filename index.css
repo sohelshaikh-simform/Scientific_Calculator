@@ -14,7 +14,7 @@ body{
     height: 55vh;
     padding: 10px;
     border-radius: 6px;
-    box-shadow: 12px 12px 20px #cbced1,-12px -12px 20px #cbced1;
+    box-shadow: 12px 12px 20px #cbced1,-12px -12px 20px #ffffff;
 
 }
 .display #screen{
@@ -88,3 +88,19 @@ button:hover{
 }
 
 /* Drodown End */
+
+.blue{
+    background-color: #33ccff;
+}
+.blue:hover{
+    background-color: #33ccff;
+    box-shadow: inset 5px 5px 6px #439af1;
+}
+.green{
+    background-color: #60ec60;
+}
+.green:hover{
+    background-color: #22e722;
+    box-shadow: inset 5px 5px 6px #158815;
+}
+

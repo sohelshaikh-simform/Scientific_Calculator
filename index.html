@@ -56,9 +56,9 @@
                             <button onclick="abs()">|x|</button>
                         </div>
                         <div class="drop-row-two">
-                            <button class="btn">exp</button>
-                            <button class="btn">mod</button>
-                            <button>rand</button>
+                            <button onclick="exp()">exp</button>
+                            <button onclick="mod()">mod</button>
+                            <button onclick="rand()">rand</button>
                         </div>
                     </div>
                 </div>
@@ -68,10 +68,8 @@
                 <button class="btn">2<sup>nd</sup></button>
                 <button onclick="pi()">&pi;</button>
                 <button onclick="e()">e</button>
-                <button onclick="clr()">Ac</button>
-                <button onclick="dlt()">DE</button>
-                <!-- <button class="btn"><i class="fa-light fa-delete-left"></i></button> -->
-
+                <button onclick="clr()" class="green">AC</button>
+                <button onclick="dlt()" class="pink"><i class="fa-solid fa-delete-left"></i></button>
             </div>
 
             <div class="row">
@@ -84,7 +82,7 @@
             </div>
 
             <div class="row">
-                <button class="btn">x<sup>y</sup></button>
+                <button onclick="xPowy()">x<sup>y</sup></button>
                 <button class="btn">7</button>
                 <button class="btn">8</button>
                 <button class="btn">9</button>
@@ -112,7 +110,7 @@
                 <button onclick="uniminus()">+/-</button>
                 <button class="btn">0</button>
                 <button class="btn">.</button>
-                <button onclick="equal()">=</button>
+                <button onclick="equal()" class="blue">=</button>
             </div>
 
         </div>

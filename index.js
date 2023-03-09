@@ -91,6 +91,10 @@ function pi(){
 function square(){
     screen.value=screen.value*screen.value;
 }
+function xPowy(){
+    btntxt="**"
+    screen.value+=btntxt;
+}
 function tenPower(){
     screen.value=Math.pow(10,screen.value)
 }
@@ -112,4 +116,16 @@ function abs(){
 }
 function dvd(){
     screen.value=1/screen.value;
+}
+function rand(){
+    screen.value=Math.random()*100;
+}
+function exp(){
+    btntxt="e"
+    screen.value+=btntxt;
+}
+function mod(){
+    btntxt="%";
+    screen.value += btntxt;
+
 }
