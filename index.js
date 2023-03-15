@@ -24,7 +24,7 @@ function memoryStore() {
     console.log(memory);
 }
 function memoryRead() {
-    screen.value+= memory
+    screen.value += memory
 }
 
 function memoryClear() {
@@ -41,19 +41,6 @@ function memoryDecre() {
 }
 
 // Memory Functions End
-
-function equal() {
-    screen.value = eval(screen.value)
-
-}
-function clr() {
-    screen.value = ""
-
-}
-function dlt() {
-    screen.value = screen.value.substr(0, screen.value.length - 1)
-
-}
 // Trigonometry Functions
 function sin() {
     screen.value = Math.sin(screen.value)
@@ -80,61 +67,77 @@ function tanh() {
 // Trigonometry Functions End
 
 // Functions Start
-function square(){
-    screen.value=screen.value*screen.value;
+function equal() {
+    try {
+        screen.value = eval(screen.value)
+    }
+    catch {
+        alert("enter valid number");
+    }
 }
-function dvd(){
-    screen.value=1/screen.value;
+function clr() {
+    screen.value = ""
+
 }
-function abs(){
-    screen.value=Math.abs(screen.value)
+function dlt() {
+    screen.value = screen.value.substr(0, screen.value.length - 1)
+
 }
-function exp(){
-    btntxt="e"
-    screen.value+=btntxt;
+function square() {
+    screen.value = screen.value * screen.value;
 }
-function mod(){
-    btntxt="%";
+function dvd() {
+    screen.value = 1 / screen.value;
+}
+function abs() {
+    screen.value = Math.abs(screen.value)
+}
+function exp() {
+    btntxt = "e"
     screen.value += btntxt;
 }
-function rand(){
-    screen.value=Math.random()*100;
+function mod() {
+    btntxt = "%";
+    screen.value += btntxt;
+}
+function rand() {
+    screen.value = Math.random() * 100;
+}
+
+function fact() {
+    let n = screen.value;
+    var f = 1;
+    for (i = 1; i <= n; i++) {
+        f = f * i;
+    }
+    screen.value = f;
+}
+function sqrt() {
+    screen.value = Math.sqrt(screen.value)
+}
+function pi() {
+    screen.value += 3.14;
+}
+
+
+function xPowy() {
+    btntxt = "**"
+    screen.value += btntxt;
+}
+function tenPower() {
+    screen.value = Math.pow(10, screen.value)
+}
+function log() {
+    screen.value = Math.log(screen.value)
+}
+
+function ln() {
+    screen.value = Math.log10(screen.value)
+}
+function e() {
+    screen.value += 2.718281828459045;
+}
+function uniminus() {
+    screen.value = -screen.value;
 }
 // Functions End
-
-function fact(){
-    let n=screen.value;
-    var f=1;
-    for(i=1;i<=n;i++){
-        f=f*i;
-    }
-    screen.value=f;
-}
-function sqrt(){
-    screen.value=Math.sqrt(screen.value)
-}
-function pi(){
-    screen.value+=3.14;
-}
-
-
-function xPowy(){
-    btntxt="**"
-    screen.value+=btntxt;
-}
-function tenPower(){
-    screen.value=Math.pow(10,screen.value)
-}
-function log(){
-    screen.value=Math.log(screen.value)
-}
-
-function ln(){
-    screen.value=Math.log10(screen.value)
-}
-function e(){
-    screen.value+=2.718281828459045;
-}
-function uniminus(){
-    screen.value=-screen.value;
-}
